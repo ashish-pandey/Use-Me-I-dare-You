@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Use Me: I dare You",
+  "version": "0.1" ,
+  "description" : "Makes your browsing experience hell!!" ,
+  "content_scripts": [
+		  {
+		    "matches": [
+		      "*://*/*" 
+		      ],
+		    "js": ["jquery-3.1.0.min.js" ,"content.js"]
+		  }
+	] ,
+	 
+	"browser_action": {
+	  "default_icon": "icon.png", 
+	  "default_title": "UseMe: I dare you"
+	} ,
+
+	"icons": {
+		"64" : "icon.png" , 
+		"32" : "icon.png" , 
+		"16" : "icon.png" , 
+		"128" : "icon.png"
+
+	}
+}
